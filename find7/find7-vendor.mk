@@ -18,7 +18,6 @@ $(call inherit-product, vendor/oppo/find7/find7-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
     PPPreference \
     qcrilmsgtunnel \
     QuickBoot \
@@ -28,6 +27,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook
+
+# Prebuilt privileged APKs
+PRODUCT_PACKAGES += \
+    com.qualcomm.location
 
 # Prebuilt vendor/libs needed for compilation
 PRODUCT_PACKAGES += \
